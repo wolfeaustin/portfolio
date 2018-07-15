@@ -37,7 +37,7 @@ const Projects = props => {
         <div class="project-col-2">
           <Project
             image={origami}
-            name="OrigamiTime"
+            name="Origami Time"
             description="An application that takes a raw DNA file and transforms it into meaningful information"
           />
         </div>

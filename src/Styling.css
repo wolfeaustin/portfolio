@@ -45,19 +45,52 @@ body {
   }
 }
 
+@keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+@-webkit-keyframes bounce {
+  from {
+    transform: translateY(0px);
+  }
+  to {
+    transform: translateY(-15px);
+  }
+}
+
 .proj-image {
   height: 200px;
+  cursor: pointer;
+  transition: transform 0.2s; /* smooths the transition*/
+}
+
+.proj-image:hover {
+  transform: scale(1.1);
 }
 
 .icon {
   height: 50px;
   padding: 10px;
+  transition: transform 0.2s;
+}
+
+.icon:hover {
+  transform: scale(1.1);
 }
 
 .icons {
   height: 50px;
 }
-
+.contact-us {
+  padding: 10px;
+  font-size: 70px;
+  font-family: "Titillium Web";
+  font-weight: 900;
+}
 .contact-text {
   padding: 80px;
   font-size: 30px;
@@ -85,6 +118,7 @@ body {
   padding: 40px;
   font-size: 50px;
   font-family: "Titillium Web";
+  font-weight: 900;
 }
 
 .profile-pic {
@@ -127,6 +161,14 @@ body {
 .down-arrow {
   height: 80px;
   padding-top: 40px;
+  transition: transform 0.2s;
+  cursor: pointer;
+  animation: bounce 1s infinite alternate;
+  -webkit-animation: bounce 1s infinite alternate;
+}
+
+.down-arrow:hover {
+  transform: scale(1.5);
 }
 
 .landing-page {
@@ -145,8 +187,9 @@ body {
 
 .greeting-text-large {
   color: white;
-  font-size: 70px;
+  font-size: 90px;
   font-family: "Titillium Web";
+  font-weight: 900;
 }
 .greeting-text-small {
   color: white;
@@ -178,16 +221,18 @@ button:focus {
 }
 
 .project-header {
-  font-size: 50px;
+  font-size: 70px;
   font-family: "Titillium Web";
   padding: 30px;
-  background-color: #6d86af;
+  background-color: #25354f;
+  font-weight: 900;
 }
 
 .project-name {
   font-size: 30px;
   font-family: "Titillium Web";
   padding: 10px;
+  font-weight: 900;
 }
 .project-description {
   font-size: 20px;
@@ -198,7 +243,7 @@ button:focus {
 .project-row {
   display: grid;
   padding: 30px;
-  background-color: #6d86af;
+  background-color: #25354f;
   grid-template-columns: auto auto;
 }
 .project-col-1 {
