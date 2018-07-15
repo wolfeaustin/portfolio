@@ -1,11 +1,12 @@
 import React from "react";
 import "../Styling.css";
+
 const Nav = props => {
   return (
     <div class="nav">
-      <button class="nav-button">PORTFOLIO</button>
-      <button class="nav-button">ABOUT</button>
-      <button class="nav-button">CONTACT</button>
+      <button class="nav-button">Portfolio</button>
+      <button class="nav-button">About</button>
+      <button class="nav-button">Contact</button>
     </div>
   );
 };

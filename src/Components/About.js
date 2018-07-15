@@ -1,14 +1,21 @@
 import React from "react";
+import pic from "../austin.svg";
+import "../Styling.css";
 
 const About = props => {
   return (
-    <div>
-      <h2>About Austin</h2>
-      <p>
-        A front-end developer with a knack for adventure. When I'm not behind a
-        computer screen, you can find me traversing the globe, watching Game of
-        Thrones, or trying to find a place to bust a move.
-      </p>
+    <div class="about-page">
+      <div class="about-col-one">
+        <img class="profile-pic" src={pic} />
+      </div>
+      <div class="about-col-two">
+        <div class="about-text">
+          <div class="about-title">ABOUT AUSTIN</div>
+          A front-end developer with a knack for adventure. When I'm not behind
+          a computer screen, you can find me traversing the globe, watching Game
+          of Thrones, or trying to track down some live country music.
+        </div>
+      </div>
     </div>
   );
 };
