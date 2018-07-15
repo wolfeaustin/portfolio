@@ -9,8 +9,15 @@ const Contact = props => {
         'Fan Mail Only'
         <div class="email">wolfeaa@goldmail.etsu.edu</div>
         <div class="icons">
-          <img class="icon" src={github} />
-          <img class="icon" src={linkedin} />
+          <a target="_blank" href="https://github.com/wolfeaustin">
+            <img class="icon" src={github} />
+          </a>
+          <a
+            target="_blank"
+            href="https://www.linkedin.com/in/austin-wolfe-b46171b4/"
+          >
+            <img class="icon" src={linkedin} />
+          </a>
         </div>
       </div>
     </div>

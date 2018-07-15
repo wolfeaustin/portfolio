@@ -45,6 +45,10 @@ body {
   }
 }
 
+.proj-image {
+  height: 200px;
+}
+
 .icon {
   height: 50px;
   padding: 10px;
@@ -120,6 +124,11 @@ body {
   background-color: Transparent;
 }
 
+.down-arrow {
+  height: 80px;
+  padding-top: 40px;
+}
+
 .landing-page {
   height: 100vh;
   display: grid;
@@ -143,6 +152,7 @@ body {
   color: white;
   font-size: 40px;
   font-family: "Titillium Web";
+  padding-bottom: 50px;
 }
 
 .nav-button {
@@ -167,24 +177,35 @@ button:focus {
   grid-template-columns: auto auto auto auto auto auto;
 }
 
-.proj1 {
-  grid-column-start: 2;
-  grid-column-end: 3;
-  padding: 5px;
+.project-header {
+  font-size: 50px;
+  font-family: "Titillium Web";
+  padding: 30px;
+  background-color: #6d86af;
 }
 
-.proj2 {
-  grid-column-start: 3;
-  grid-column-end: 4;
-  padding: 5px;
+.project-name {
+  font-size: 30px;
+  font-family: "Titillium Web";
+  padding: 10px;
 }
-.proj3 {
-  grid-column-start: 4;
-  grid-column-end: 5;
-  padding: 5px;
+.project-description {
+  font-size: 20px;
+  font-family: "Titillium Web";
+  padding: 10px;
 }
-.proj4 {
-  grid-column-start: 5;
-  grid-column-end: 6;
-  padding: 5px;
+
+.project-row {
+  display: grid;
+  padding: 30px;
+  background-color: #6d86af;
+  grid-template-columns: auto auto;
+}
+.project-col-1 {
+  grid-column: 1;
+  padding: 10px;
+}
+.project-col-2 {
+  grid-column: 2;
+  padding: 10px;
 }

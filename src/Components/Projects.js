@@ -1,33 +1,46 @@
 import React from "react";
 import Project from "./Project";
 import "../Styling.css";
+import dna from "../dnaPic.png";
+import boom from "../boomPic.png";
+import tub from "../tubPic.png";
+import origami from "../origamiPic.png";
 
 const Projects = props => {
   return (
-    <div class="container">
-      <div class="proj1">
-        <Project
-          name="DNA Parser"
-          description="An application that takes a raw DNA file and transforms it into meaningful information"
-        />
+    <div>
+      <div class="project-header">Projects</div>
+      <div class="project-row">
+        <div class="project-col-1">
+          <Project
+            image={dna}
+            name="DNA Parser"
+            description="An application that takes a raw DNA file and transforms it into meaningful information"
+          />
+        </div>
+        <div class="project-col-2">
+          <Project
+            image={boom}
+            name="Boom Supersonic"
+            description="An application that takes a raw DNA file and transforms it into meaningful information"
+          />
+        </div>
       </div>
-      <div class="proj2">
-        <Project
-          name="Origami Time"
-          description="A site for Origami Enthusiasts to share their models with the world"
-        />
-      </div>
-      <div class="proj3">
-        <Project
-          name="Book-A-Tub"
-          description="A place where users can find nearby pools or hot tubs to rent listed by other users"
-        />
-      </div>
-      <div class="proj4">
-        <Project
-          name="Book-A-Tub"
-          description="A place where users can find nearby pools or hot tubs to rent listed by other users"
-        />
+      <div class="project-row">
+        <div class="project-col-1">
+          <Project
+            image={tub}
+            name="Book-A-Tub"
+            description="An application that takes a raw DNA file and transforms it into meaningful information"
+          />
+        </div>
+        <div class="project-col-2">
+          <Project
+            image={origami}
+            name="OrigamiTime"
+            description="An application that takes a raw DNA file and transforms it into meaningful information"
+          />
+        </div>
       </div>
     </div>
   );

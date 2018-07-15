@@ -3,8 +3,9 @@ import React from "react";
 const Project = props => {
   return (
     <div>
-      <h3>{props.name}</h3>
-      <h4>{props.description}</h4>
+      <img class="proj-image" src={props.image} />
+      <div class="project-name">{props.name}</div>
+      <div class="project-description">{props.description}</div>
     </div>
   );
 };
