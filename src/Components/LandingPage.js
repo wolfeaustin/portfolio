@@ -5,8 +5,7 @@ class LandingPage extends React.Component {
   constructor() {
     super();
   }
-  handleArrowClick = event => {
-    // console.log(event);
+  handleArrowClick = () => {
     window.scrollTo(0, 780);
   };
   render() {
@@ -16,11 +15,13 @@ class LandingPage extends React.Component {
           <div class="greeting-container">
             <div class="greeting-text-large">Hi, I'm Austin.</div>
             <div class="greeting-text-small">Let me show you around.</div>
-            <img
-              onClick={this.handleArrowClick}
-              class="down-arrow"
-              src={arrow}
-            />
+            <div class="make-larger">
+              <img
+                onClick={this.handleArrowClick}
+                class="down-arrow"
+                src={arrow}
+              />
+            </div>
           </div>
         </div>
       </div>

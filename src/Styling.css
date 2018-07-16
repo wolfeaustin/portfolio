@@ -167,6 +167,13 @@ body {
   -webkit-animation: bounce 1s infinite alternate;
 }
 
+.make-larger {
+  transition: transform 0.2s;
+}
+.make-larger:hover {
+  transform: scale(1.5);
+}
+
 .down-arrow:hover {
   transform: scale(1.5);
 }
