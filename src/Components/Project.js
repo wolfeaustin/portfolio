@@ -1,5 +1,4 @@
 import React from "react";
-import Download from "@axetroy/react-download";
 import sample from "../sample_genome.txt";
 
 const Project = props => {
