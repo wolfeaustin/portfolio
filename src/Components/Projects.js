@@ -2,7 +2,7 @@ import React from "react";
 import Project from "./Project";
 import "../Styling.css";
 import dna from "../dnaPic.png";
-import boom from "../boomPic.png";
+import supersonic from "../supersonic.png";
 import portfolio from "../portfolioSite.png";
 import origami from "../origamiPic.png";
 
@@ -21,9 +21,9 @@ const Projects = props => {
         </div>
         <div class="project-col-2">
           <Project
-            image={boom}
+            image={supersonic}
             githubPath="https://github.com/wolfeaustin/boomSupersonic"
-            name="Boom Supersonic"
+            name="Supersonic Flight Time"
             description="Calculates the flight time of supersonic aircraft compared to subsonic airliners"
           />
         </div>
