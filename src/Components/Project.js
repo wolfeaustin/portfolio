@@ -1,4 +1,6 @@
 import React from "react";
+import Download from "@axetroy/react-download";
+import sample from "../sample_genome.txt";
 
 const Project = props => {
   return (
@@ -8,6 +10,11 @@ const Project = props => {
       </a>
       <div class="project-name">{props.name}</div>
       <div class="project-description">{props.description}</div>
+      {props.name == "DNA Parser" && (
+        <a href={sample} download>
+          <button type="button">Download Sample DNA file</button>
+        </a>
+      )}
     </div>
   );
 };
